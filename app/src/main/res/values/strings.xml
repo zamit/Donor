@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Donor</string>
+    <string name="app_name">Донор56</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">#Донор56</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Об авторе</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Обращение</string>
+    <string name="menu_slideshow">Подготовка</string>
 </resources>
