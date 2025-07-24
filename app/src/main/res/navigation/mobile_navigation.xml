@@ -16,6 +16,11 @@
         android:name="com.example.donor.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.donor.ui.news.NewsFragment"
+        android:label="Новости"
+        tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/nav_slideshow"
