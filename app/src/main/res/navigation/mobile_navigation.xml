@@ -21,6 +21,11 @@
         android:name="com.example.donor.ui.news.NewsFragment"
         android:label="Новости"
         tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/nav_mif"
+        android:name="com.example.donor.ui.mif.MifFragment"
+        android:label="Мифы"
+        tools:layout="@layout/fragment_mif" />
 
     <fragment
         android:id="@+id/nav_slideshow"
