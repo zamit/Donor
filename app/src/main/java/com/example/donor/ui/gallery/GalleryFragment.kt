@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.webkit.WebSettings
+import android.webkit.WebView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.donor.databinding.FragmentGalleryBinding
+
 
 class GalleryFragment : Fragment() {
 
@@ -28,11 +30,11 @@ class GalleryFragment : Fragment() {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+        val hom: WebView = binding.webp
+        val webSettings: WebSettings = hom.getSettings()
+        webSettings.javaScriptEnabled = true
+        hom.loadUrl("file:///android_asset/punkt.html")
+                return root
     }
 
     override fun onDestroyView() {
