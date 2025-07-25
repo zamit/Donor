@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
 }
 
 android {
@@ -40,6 +41,21 @@ android {
 
 dependencies {
 
+
+
+    // Исключаем старую версию из всех зависимостей
+    configurations.all {
+        exclude(group = "com.intellij", module = "annotations")
+    }
+
+    // Пример для Room (если используется)
+    implementation("androidx.room:room-runtime:2.5.0") {
+        exclude(group = "com.intellij", module = "annotations")
+    }
+
+
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,6 +67,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.legacy.support.v4)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.runtime.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

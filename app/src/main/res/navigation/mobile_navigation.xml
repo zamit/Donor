@@ -22,6 +22,11 @@
         android:label="Новости"
         tools:layout="@layout/fragment_news" />
     <fragment
+        android:id="@+id/nav_book"
+        android:name="com.example.donor.ui.book.BookFragment"
+        android:label="Новости"
+        tools:layout="@layout/fragment_book" />
+    <fragment
         android:id="@+id/nav_mif"
         android:name="com.example.donor.ui.mif.MifFragment"
         android:label="Мифы"
